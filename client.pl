@@ -1,4 +1,4 @@
-#powered by jreisinger :);
+#client script forked from jreisinger
 
 use Win32::Internet;
 use URI::Encode qw(uri_encode uri_decode);;
