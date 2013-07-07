@@ -1,44 +1,37 @@
-<html>
-<body>
-
-<h3>Enter command for client station</h3>
-	<form action="process.php" method="post">
-		Command: <input type="text" name="cmd"><br><br>
-		<input type="submit" name="submit" value="Enter command">
-		<input type="submit" name="submit" value="Clear output window">
-		<input type="submit" name="submit" value="Clear history">
-	</form>
-<hr>
-
-<table width=100%>
-	<tr>
-		<td width=70%><b>Command output</b></td>
-		<td width=30%><b>Command history</b></td>
-	</tr>
-
-	<tr>
-		<td>
-
-		<?php
-                    $myout = "output.txt";
-               echo nl2br(file_get_contents($myout));
-//		include ("output.txt");
-		?>
-		</td>
-
-		<td>
-		<?php
-                    $myhist = "history.txt";
-                    echo nl2br(file_get_contents($myhist));
-		?>
-		</td>
-	</tr>
-</table>
-
-
 <?php
 
-?>
-</body>
-</html>
+//vetvenie podla toho, aky button stacim
+switch ($_POST['submit']) {
+      // ak Enter command
+      case 'Enter command':
+		$cmd = $_POST['cmd'];
+		$fh1 = fopen("history.txt", "a");
+		$savestring = $cmd . "\n";
+		fwrite($fh1, $savestring);
+		fclose($fh1);
+       
+		file_put_contents("actual.txt", "");
+		$fh2 = fopen("actual.txt", "a");
+		$savestring2 = $cmd . "\n";
+		fwrite($fh2, $savestring2);
+		fclose($fh2);
 
+     break;
+
+      // ak Clear output window
+      case 'Clear output window':
+		file_put_contents("postdata.txt", "");
+      break;
+
+      // if Ak clear history
+      case 'Clear history':
+		file_put_contents("history.txt", "");
+      break;
+}
+
+
+
+include ("form.php");
+include ("output.php");
+
+?>
