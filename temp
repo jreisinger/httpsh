@@ -1,0 +1,23 @@
+use strict;
+use warnings;
+
+#use LWP::UserAgent;
+use LWP::Simple;
+
+
+  #LWI::Simple. stahujem obsah suboru actual.txt do $actual 
+	my $geturl = "http://195.146.133.198/httpsh/actual.txt";
+	my $actual = get $geturl;
+	print $actual;
+	
+
+#The user agent created by this module will identify itself as "LWP::Simple/#.##" 
+#and will initialize its proxy defaults from the environment (by calling $ua->env_proxy).
+
+$ua->proxy(['http', 'ftp'], 'http://proxy.sn.no:8001/');
+
+#load proxy settings from *_proxy environment variables.
+#$ua->env_proxy;
+
+
+$ua->credentials('www.company.com:80', '', "MyDomain\\MyUserCode", 'MyPassword');
