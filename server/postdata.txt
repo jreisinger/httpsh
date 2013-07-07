@@ -1,0 +1,180 @@
+C:\>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Local Area Connection:
+
+        Connection-specific DNS Suffix  . : 
+        IP Address. . . . . . . . . . . . : 192.168.1.10
+        Subnet Mask . . . . . . . . . . . : 255.255.255.0
+        Default Gateway . . . . . . . . . : 192.168.1.1
+
+
+C:\>netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    john:1054              localhost:1055         ESTABLISHED
+  TCP    john:1055              localhost:1054         ESTABLISHED
+  TCP    john:1375              localhost:30606        CLOSE_WAIT
+  TCP    john:1421              localhost:30606        ESTABLISHED
+  TCP    john:1487              localhost:30606        TIME_WAIT
+  TCP    john:2507              localhost:30606        ESTABLISHED
+  TCP    john:2517              localhost:30606        ESTABLISHED
+  TCP    john:2527              localhost:30606        ESTABLISHED
+  TCP    john:2535              localhost:30606        ESTABLISHED
+  TCP    john:2652              localhost:30606        ESTABLISHED
+  TCP    john:2704              localhost:30606        ESTABLISHED
+  TCP    john:2706              localhost:30606        TIME_WAIT
+  TCP    john:30606             localhost:1421         ESTABLISHED
+  TCP    john:30606             localhost:2507         ESTABLISHED
+  TCP    john:30606             localhost:2517         ESTABLISHED
+  TCP    john:30606             localhost:2525         TIME_WAIT
+  TCP    john:30606             localhost:2527         ESTABLISHED
+  TCP    john:30606             localhost:2529         TIME_WAIT
+  TCP    john:30606             localhost:2535         ESTABLISHED
+  TCP    john:30606             localhost:2576         TIME_WAIT
+  TCP    john:30606             localhost:2592         TIME_WAIT
+  TCP    john:30606             localhost:2626         TIME_WAIT
+  TCP    john:30606             localhost:2628         TIME_WAIT
+  TCP    john:30606             localhost:2630         TIME_WAIT
+  TCP    john:30606             localhost:2632         TIME_WAIT
+  TCP    john:30606             localhost:2634         TIME_WAIT
+  TCP    john:30606             localhost:2638         TIME_WAIT
+  TCP    john:30606             localhost:2640         TIME_WAIT
+  TCP    john:30606             localhost:2644         TIME_WAIT
+  TCP    john:30606             localhost:2646         TIME_WAIT
+  TCP    john:30606             localhost:2650         TIME_WAIT
+  TCP    john:30606             localhost:2652         ESTABLISHED
+  TCP    john:30606             localhost:2654         TIME_WAIT
+  TCP    john:30606             localhost:2656         TIME_WAIT
+  TCP    john:30606             localhost:2658         TIME_WAIT
+  TCP    john:30606             localhost:2660         TIME_WAIT
+  TCP    john:30606             localhost:2662         TIME_WAIT
+  TCP    john:30606             localhost:2664         TIME_WAIT
+  TCP    john:30606             localhost:2666         TIME_WAIT
+  TCP    john:30606             localhost:2668         TIME_WAIT
+  TCP    john:30606             localhost:2670         TIME_WAIT
+  TCP    john:30606             localhost:2672         TIME_WAIT
+  TCP    john:30606             localhost:2674         TIME_WAIT
+  TCP    john:30606             localhost:2676         TIME_WAIT
+  TCP    john:30606             localhost:2678         TIME_WAIT
+  TCP    john:30606             localhost:2680         TIME_WAIT
+  TCP    john:30606             localhost:2682         TIME_WAIT
+  TCP    john:30606             localhost:2684         TIME_WAIT
+  TCP    john:30606             localhost:2686         TIME_WAIT
+  TCP    john:30606             localhost:2688         TIME_WAIT
+  TCP    john:30606             localhost:2690         TIME_WAIT
+  TCP    john:30606             localhost:2692         TIME_WAIT
+  TCP    john:30606             localhost:2694         TIME_WAIT
+  TCP    john:30606             localhost:2696         TIME_WAIT
+  TCP    john:30606             localhost:2698         TIME_WAIT
+  TCP    john:30606             localhost:2700         TIME_WAIT
+  TCP    john:30606             localhost:2702         TIME_WAIT
+  TCP    john:30606             localhost:2704         ESTABLISHED
+  TCP    john:30606             localhost:2708         TIME_WAIT
+  TCP    john:30606             localhost:2710         TIME_WAIT
+  TCP    john:30606             localhost:2712         TIME_WAIT
+  TCP    john:1045              stip-static-198.195-146-133.telecom.sk:22  ESTABLISHED
+  TCP    john:1422              edge-star-ecmp-01-ams2.facebook.com:https  ESTABLISHED
+  TCP    john:2490              77.67.96.166:https     TIME_WAIT
+  TCP    john:2508              95.100.96.233:https    ESTABLISHED
+  TCP    john:2510              95.100.96.233:https    TIME_WAIT
+  TCP    john:2512              95.100.96.233:https    TIME_WAIT
+  TCP    john:2514              95.100.96.233:https    TIME_WAIT
+  TCP    john:2518              77.67.96.199:https     ESTABLISHED
+  TCP    john:2520              95.100.96.233:https    TIME_WAIT
+  TCP    john:2522              77.67.96.151:https     TIME_WAIT
+  TCP    john:2524              95.100.96.233:https    TIME_WAIT
+  TCP    john:2528              2.16.219.9:https       ESTABLISHED
+  TCP    john:2532              2.16.219.57:https      TIME_WAIT
+  TCP    john:2534              2.16.219.16:https      TIME_WAIT
+  TCP    john:2536              77.67.96.199:https     ESTABLISHED
+  TCP    john:2538              77.67.96.199:https     TIME_WAIT
+  TCP    john:2540              77.67.96.199:https     TIME_WAIT
+  TCP    john:2542              77.67.96.199:https     TIME_WAIT
+  TCP    john:2544              77.67.96.199:https     TIME_WAIT
+  TCP    john:2546              77.67.96.151:https     TIME_WAIT
+  TCP    john:2548              77.67.96.151:https     TIME_WAIT
+  TCP    john:2550              77.67.96.151:https     TIME_WAIT
+  TCP    john:2552              77.67.96.151:https     TIME_WAIT
+  TCP    john:2558              2.16.219.9:https       TIME_WAIT
+  TCP    john:2561              channel-ecmp-06-frc1.facebook.com:https  TIME_WAIT
+  TCP    john:2575              2.16.219.50:https      TIME_WAIT
+  TCP    john:2579              2.16.219.58:https      TIME_WAIT
+  TCP    john:2581              2.16.219.58:https      TIME_WAIT
+  TCP    john:2583              2.16.219.58:https      TIME_WAIT
+  TCP    john:2585              2.16.219.50:https      TIME_WAIT
+  TCP    john:2587              channel-ecmp-06-frc1.facebook.com:https  TIME_WAIT
+  TCP    john:2601              2.21.51.206:https      TIME_WAIT
+  TCP    john:2605              channel-ecmp-06-frc1.facebook.com:https  TIME_WAIT
+  TCP    john:2625              77.67.96.151:https     TIME_WAIT
+  TCP    john:2643              95.100.97.106:https    TIME_WAIT
+  TCP    john:2649              channel-ecmp-06-frc1.facebook.com:https  TIME_WAIT
+  TCP    john:2653              2.16.219.58:https      ESTABLISHED
+  TCP    john:2705              stip-static-198.195-146-133.telecom.sk:http  ESTABLISHED
+
+
+C:\>dir d:
+ Volume in drive D is data
+ Volume Serial Number is 3089-965A
+
+ Directory of D:\_backup_archiv\howtos_moje\perl
+
+07/07/2013  08:16 AM    DIR          .
+07/07/2013  08:16 AM    DIR          ..
+07/06/2013  10:17 PM               696 httpsh_post.pl
+07/06/2013  02:16 PM               236 test.pl
+               2 File(s)            932 bytes
+               2 Dir(s)  103,205,945,344 bytes free
+
+
+Command: dir d:
+ Volume in drive D is data
+ Volume Serial Number is 3089-965A
+
+ Directory of D:\_backup_archiv\howtos_moje\perl
+
+07/07/2013  08:16 AM    DIR          .
+07/07/2013  08:16 AM    DIR          ..
+07/07/2013  08:32 AM               701 httpsh_post.pl
+07/06/2013  02:16 PM               236 test.pl
+               2 File(s)            937 bytes
+               2 Dir(s)  103,205,945,344 bytes free
+
+
+Command: ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Local Area Connection:
+
+        Connection-specific DNS Suffix  . : 
+        IP Address. . . . . . . . . . . . : 192.168.1.10
+        Subnet Mask . . . . . . . . . . . : 255.255.255.0
+        Default Gateway . . . . . . . . . : 192.168.1.1
+
+
+Command: dir c:
+ Volume in drive C has no label.
+ Volume Serial Number is 08B9-7CD8
+
+ Directory of C:\
+
+06/15/2013  11:23 PM    DIR          01f4d7be3cf1ed1e3312
+05/12/2013  12:37 PM                73 Autoconfig.ini
+05/11/2013  03:21 PM                 0 AUTOEXEC.BAT
+05/11/2013  03:21 PM                 0 CONFIG.SYS
+05/17/2013  06:58 PM    DIR          Documents and Settings
+07/04/2013  01:15 PM               387 httpsh_c.pl
+05/11/2013  03:38 PM    DIR          NVIDIA
+07/03/2013  11:15 PM    DIR          Program Files
+07/04/2013  12:13 PM    DIR          strawberry
+06/18/2013  08:12 PM    DIR          WINDOWS
+               4 File(s)            460 bytes
+               6 Dir(s)  193,350,500,352 bytes free
+
+

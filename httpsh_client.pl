@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-#use LWP::UserAgent;
+use LWP::UserAgent;
 use LWP::Simple;
 
 my $last="";
@@ -14,7 +14,7 @@ while (1){
 
 	#spustenie komandu a ulozenie do $out
 	my $out;
-	$out = "Command: ".$actual;
+	$out = "C:\\>".$actual;
 	for my $line (`$actual`) {
 	$out .= $line;
 	}

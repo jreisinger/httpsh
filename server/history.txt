@@ -1,0 +1,5 @@
+ipconfig
+netstat
+dir d:
+ipconfig
+dir c:
