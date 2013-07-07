@@ -14,7 +14,7 @@ while (1){
 
 	#spustenie komandu a ulozenie do $out
 	my $out;
-	$out = "C:\\>".$actual;
+	$out = "Command: ".$actual;
 	for my $line (`$actual`) {
 	$out .= $line;
 	}
