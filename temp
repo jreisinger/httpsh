@@ -1,23 +1,15 @@
-use strict;
-use warnings;
+  use LWP::UserAgent;
+  use HTTP::Request::Common qw(GET);
+    
+$ua = LWP::UserAgent->new;
+$ua->proxy ('http', 'http://proxy.st.sk:8080');
+$ua->credentials('proxy.st.sk', 'trinity03.st.sk', "jkosik", 'Kukucka177');
 
-#use LWP::UserAgent;
-use LWP::Simple;
+#my $url='http://195.146.133.198/httpsh/actual.txt';
+my $req= GET 'http://195.146.133.198/httpsh/actual.txt';
+#my $req = GET 'http://www.perlmeme.org';
+my $res = $ua->request($req);
 
+#my $res = $ua->request(new HTTP::Request GET => $URL);
 
-  #LWI::Simple. stahujem obsah suboru actual.txt do $actual 
-	my $geturl = "http://195.146.133.198/httpsh/actual.txt";
-	my $actual = get $geturl;
-	print $actual;
-	
-
-#The user agent created by this module will identify itself as "LWP::Simple/#.##" 
-#and will initialize its proxy defaults from the environment (by calling $ua->env_proxy).
-
-$ua->proxy(['http', 'ftp'], 'http://proxy.sn.no:8001/');
-
-#load proxy settings from *_proxy environment variables.
-#$ua->env_proxy;
-
-
-$ua->credentials('www.company.com:80', '', "MyDomain\\MyUserCode", 'MyPassword');
+	print $res;
